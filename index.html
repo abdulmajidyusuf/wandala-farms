@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wandala farms| Quality Livestock & Grains</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Preload first slide image -->
+    <link rel="preload" href="images/slide1.jpg" as="image">
+</head>
+
+
+<body>
+
+<!-- Header & Navigation -->
+<header>
+    <div class="container header-container">
+        <!-- Logo and Farm Name -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Green Valley Farm Logo" class="logo-img" width="150" height="60">
+            <div class="logo-text">Wandala<span>Farms</span></div>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    
+    <!-- Mobile Navigation (hidden by default) -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero" id="home">
+        <div class="slideshow-container">
+            <!-- Slides will be added dynamically by JavaScript -->
+            <div class="slides-wrapper">
+                <!-- Slides inserted here -->
+            </div>
+            
+            <div class="slideshow-nav">
+                <!-- Navigation dots will be added dynamically -->
+            </div>
+            
+            <button class="slideshow-prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slideshow-next" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Logo and Tagline Section -->
+    <section class="logo-section">
+        <div class="container">
+            <div class="center-logo">
+                <img src="images/logo.png" alt="Green Valley Farm Logo" width="200" height="80">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">About Our Farm</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Wandala Farms has been a family owned agricultural business since 2017. We take pride in sustainable farming practices and animal welfare, ensuring that all our products meet the highest standards of quality.
+                    </p>
+                    <p>
+                        Our farm specializes in livestock including cattle, goats, sheep, and poultry, as well as a variety of grains like wheat, rice, maize, and beans. We're committed to providing fresh, healthy products across Nigeria.
+                    </p>
+                    <p>
+                         We combine traditional methods with modern sustainable practices to deliver the best farm products to our customers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <h2 class="section-title">Our Products & Services</h2>
+            <div class="services-grid">
+                <!-- Livestock -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-horse"></i>
+                    </div>
+                    <h3>Livestock</h3>
+                    <p>Healthy cattle, goats, sheep, and poultry raised with care and proper nutrition. We provide quality livestock for both commercial and individual needs.</p>
+                </div>
+                
+                <!-- Grains -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Grains</h3>
+                    <p>Premium quality wheat, rice, maize, and beans. Our grains are grown using sustainable practices and harvested at peak freshness.</p>
+                </div>
+                
+                <!-- Supply -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Supply Services</h3>
+                    <p>Reliable delivery of farm products to businesses, restaurants, and individuals. We ensure timely delivery while maintaining product quality.</p>
+                </div>
+                
+                <!-- Consultation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Farm Consultation</h3>
+                    <p>Expert advice on livestock management, crop cultivation, and sustainable farming practices for both new and experienced farmers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Reach out to us through any of these channels to visit our farm in person or for inquiries and orders.</p>
+                    
+                    <div class="contact-items">
+                        <!-- WhatsApp Contact -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                 <p id="phoneDisplay"></p>
+                                <button id="revealPhoneBtn" class="btn contact-btn">Number</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Email Contact -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                  <p id="emailDisplay"></p>
+                                <button id="revealEmailBtn" class="btn contact-btn">Email</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">Wandala Farms</div>
+            <p>RC. 1209207</p>
+            <p>Providing quality livestock and grains since 2017</p>
+            
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i>  Kwakuti, minna-suleja Road Paikoro LGA Niger State</p>
+                <p><i class="fas fa-map-marker-alt"></i> Apo, Kabusa district, adjacent Kabusa market abbatoir </p>
+                
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Wandala Farms. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
