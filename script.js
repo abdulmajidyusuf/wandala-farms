@@ -10,8 +10,14 @@ const emailDisplay = document.getElementById('emailDisplay');
 const encodedPhone = 'KzIzNDgwNTY4MjkwNzM='; // BaW5mase64 encoded: +1 (234) 567-8900
 const encodedEmail = 'd2FuZGFsYWZhcm1zbmdAZ21haWwuY29t'; // Base64 encoded: info@greenvalleyfarm.com
 
-// Slideshow images array (11 images as requested)
+// Slideshow images array (new images added to the beginning as requested)
 const slideImages = [
+    'images/IMG-20261013-WA0002.jpg',
+    'images/IMG-20261013-WA0003.jpg',
+    'images/IMG-20261013-WA0004.jpg',
+    'images/IMG-20261013-WA0005.jpg',
+    'images/IMG-20261013-WA0006.jpg',
+    'images/IMG-20261030-WA0000.jpg',
     'images/slide1.jpg',
     'images/slide2.jpg',
     'images/slide3.jpg',
